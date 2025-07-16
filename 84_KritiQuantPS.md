@@ -19,20 +19,20 @@ We employ three complementary methods to classify market regimes:
 
    ATR captures the full magnitude of price movements, which is crucial for sizing trades and managing risk.
 
-   ![Image 5-1](images/image_5_1.png)
+   ![Image 5-1](./image_5_1.png)
 
 2. **Cumulative Sum (CUSUM)**  
    CUSUM is a sequential analysis technique that accumulates positive and negative deviations from a target mean, allowing detection of subtle shifts in price behavior.
 
-   ![Image 6-2](images/image_6_2.png)  
-   ![Image 7-1](images/image_7_1.png)
+   ![Image 6-2](./image_6_2.png)  
+   ![Image 7-1](./image_7_1.png)
 
 3. **Time‑Based Classification**  
    Intraday demand varies predictably:
    - **Evening (15:00–18:00)**: Higher residential demand ⇒ potential bullish runs  
    - **Early morning (01:00–04:00)**: Lower demand ⇒ potential bearish runs
 
-   ![Image 8-4](images/image_8_4.png)
+   ![Image 8-4](./image_8_4.png)
 
 ---
 
@@ -50,7 +50,7 @@ To capture significant price movements, we use:
 - **Zig‑Zag Indicator**  
   Filters out minor fluctuations to highlight major swing highs and lows, clarifying trend direction.
 
-![Image 9-1](images/image_9_1.png)
+![Image 9-1](./image_9_1.png)
 
 ---
 
@@ -67,7 +67,7 @@ Our strategy integrates regime classification with trend signals to optimize tra
 - **Bullish regime (hourly based)**: Allocate 10% of capital per trade.  
 - **Other regimes**: Allocate 5% of capital per trade.
 
-![Image 10-3](images/image_10_3.png)
+![Image 10-3](./image_10_3.png)
 
 ---
 
@@ -79,7 +79,7 @@ Given high market volatility, we apply:
 - **Stop‑Loss**: Exit position if loss exceeds 2%.  
 - **Profit Taking**: When profit ≥ 5%, close 60% of the position and trail the stop‑loss on the remaining exposure.
 
-![Image 11-1](images/image_11_1.png)
+![Image 11-1](./image_11_1.png)
 
 ---
 
@@ -91,8 +91,8 @@ Given high market volatility, we apply:
 - **Maximum Drawdown**: −7.25%  
 - **Total Return**: 327.42% (Oct–Dec 2024)
 
-![Image 12-2](images/image_12_2.png)  
-![Image 12-3](images/image_12_3.png)
+![Image 12-2](./image_12_2.png)  
+![Image 12-3](./image_12_3.png)
 
 ---
 
@@ -105,7 +105,7 @@ Given high market volatility, we apply:
 
 Total profit (2.10) exceeds total loss (1.08), confirming overall profitability.
 
-![Image 13-3](images/image_13_3.png)
+![Image 13-3](./image_13_3.png)
 
 ---
 
@@ -117,5 +117,5 @@ To avoid lookahead bias, we used a **data‑cutting** method:
 
 **Plot of Before vs. After Signal**
 
-![Image 14-3](images/image_14_3.png)
+![Image 14-3](./image_14_3.png)
 
